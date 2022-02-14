@@ -1,0 +1,11 @@
+name: checking variables
+on: push
+jobs:
+  runs-on: ubuntu-latest
+    step1:
+      - name: calling variables
+        run: |
+          echo ${{vars.dish}}
+          echo ${{vars.dish1}}
+          echo $hostname
+
